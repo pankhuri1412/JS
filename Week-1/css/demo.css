@@ -1,0 +1,12 @@
+ .open {
+display: block;
+}
+
+.close {
+display: none;
+}
+
+button {
+ background-color: teal;
+ color: white;
+}

@@ -1,0 +1,26 @@
+<script>
+    // var sum = (num1,num2) => return num1 + num2;
+    var sum = (num1, num2) =>{
+        return num1+ num2;
+    };
+
+    const x = function(n){
+        return n+5;
+    }
+
+    const y = (n) => {//use {} when you have multiple values
+        return n+5 
+    }
+
+    var courses = [
+        "javascript",
+        "react",
+        "angular"
+    ]
+    console.log("General Function Call:" ,x(2));
+    console.log("Arrow Function Call:" ,y(2));
+    console.log("Arrow Function Call:" ,sum("2",3));
+    console.log(courses.map(courses => courses.length));    
+
+    
+</script>

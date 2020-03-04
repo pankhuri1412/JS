@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            width: 300px;
+            height: 200px;
+            overflow: auto;
+            border: 25px solid #000000;
+            padding: 20px;
+            /* white-space: nowrap; */
+        }
+        #floatingContent {
+            left: 30px;
+            top: 30px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="floatingContent">INFOGAIN NOIDA</div>
+        <h3>Infogain JavaScript Training</h3>
+        <p> Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+        <p> Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+        <p> Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+    </div>
+</body>
+<script>
+console.log("clientLeft:-- ",container.clientLeft); // basically border
+console.log("clientTop:-- ",container.clientTop);
+console.log("clientWidth:-- ",container.clientWidth); // width of content + padding but minus scrollbar width in it
+console.log("clientHeight:-- ",container.clientHeight);
+console.log("offsetWidth:-- ",container.offsetWidth);  // width of content + padding + border because it takes from offset(parent)
+console.log("offsetHeight:-- ",container.offsetHeight);
+console.log("scrollWidth:-- ",container.scrollWidth); //width available for scrolling is scroll width
+console.log("scrollHeight:-- ",container.scrollHeight);
+console.log("scrollLeft:-- ",container.scrollLeft); // width which is scrolled from horizontal scroll
+console.log("scrollTop:-- ",container.scrollTop); // pixels scrolled in vertical scroll
+console.log("offsetParent:-- ",container.offsetParent); // gives parent offset i.e. body
+console.log("offsetLeft:-- ",container.offsetLeft); // shows how much left it is from offset, position absolute will work
+console.log("offsetTop:-- ",container.offsetTop);
+</script>
+</html>

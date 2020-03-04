@@ -1,0 +1,20 @@
+<form id="form">
+    <input name="login">
+</form>
+
+<script>
+    
+    console.log(form.elements.login); // login by form.elements
+    console.log(form.login); // login by form short notation
+
+    console.log(form.elements.login == form.login); // true, the same <input>
+
+    form.login.name = "username"; // change the name of the input
+
+    // form.elements updated the name:
+    console.log(form.elements.login); // undefined
+    console.log(form.elements.username); // input
+
+    // form short notation allows both names: the new one and the old one
+    console.log(form.username == form.login); // true
+</script>

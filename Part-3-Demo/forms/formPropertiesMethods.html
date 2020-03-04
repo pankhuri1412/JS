@@ -1,0 +1,20 @@
+<form name="trainingForm">
+    <input type="text" name="one" value="11">
+    <input type="text" name="two" value="22">
+
+    <input type="radio" name="gender" value="MALE">
+    <input type="radio" name="gender" value="FEMALE">
+</form>
+
+<script>
+    // get the form
+    let form = document.forms.trainingForm; // <form name="trainingForm"> element
+
+    // get the element
+    let elem = form.elements.one; // <input name="one"> element
+
+    console.log("Element value is: ", elem.value); // 11
+
+    let radioElem = form.elements.gender[0];
+    console.log("Element value is: ", radioElem.value);
+</script>

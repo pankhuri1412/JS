@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JAVASCRIPT</title>
+<script src="js/index.js"></script>
+</head>
+<body>
+    <h1 id="test" onclick="valueChange('Learning')">Learning Javascript</h1>
+    <p onclick="message('CLICKED')">Click me!!</p>
+    <p>Hii</p>
+    <p>Every</p>
+    <p id="output">One....</p>
+    <p>Hii this is my page</p>
+    <p id="demo">Output of the Functions</p>
+    <button type="button" onclick="displayOutput()">Display Output!!</button><br/>
+
+    <!-- it occur when value is change ex:-radio button, checkbox, dropdown -->
+
+    <button type="button" onchange="displayOutput1Value('change')">Display Output!!</button><br/>
+    <button type="button" ondblclick="displayOutput1Value('doubleClick')">Display Output!!</button><br/>
+    <button type="button" onmousedown="displayOutput1Value('mouse down')">Display Output!!</button><br/>
+    <button type="button" onmousemove="displayOutput1Value('mouse move')">Display Output!!</button><br/>
+    <button type="button" onmouseout="displayOutput1Value('mouse out')">Display Output!!</button><br/>
+    <button type="button" onmouseover="displayOutput1Value('mouse over')">Display Output!!</button><br/>
+    <button type="button" onmousewheel="displayOutput1Value('mouse wheel')">Display Output!!</button><br/>
+    <button type="button" onkeydown="displayOutput1Value('key down')">Display Output!!</button><br/>
+    <button type="button" onkeypress="displayOutput1Value('key press')">Display Output!!</button><br/>
+    <button type="button" onkeyup="displayOutput1Value('key up')">Display Output!!</button><br/>
+
+    <h1>Modify the DOM</h1>
+    <button type="button" onclick="document.getElementById('changePara').innerHTML = 'Paragraph is Changed';">
+    CLICK 1</button>
+    <button type="button" onclick="document.getElementById('changePara').innerHTML = 'Paragraph is Changed Again';"> 
+    CLICK 2</button>
+    <p>Paragraph 1</p>
+    <p id="changePara">Paragraph 2</p>
+    <p>Paragraph 3</p>
+
+
+
+</body>
+
+</html>

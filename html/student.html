@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Student Data</title>
+  <script src="../js/student.js"></script>
+  <link rel="stylesheet" href="../css/student.css">
+</head>
+
+<body>
+<h1>Student Record</h1>
+<form id = "mainForm">
+    <fieldset>
+      <label for="studentName">Name:</label>
+      <input type="text" name="studentName" id="studentName" required>
+      <br/>
+      <label for="rollNo">Roll No:</label>
+      <input type="text" name="rollNo" id="rollNo" pattern="[0-9]{5}" required>
+      <br/>
+    </fieldset>
+    <button type="button" id="add" name="add" onclick="addFunction()" >Add Details</button>
+</form>
+
+
+<p id="td1"></p>
+<p id="td2"></p>
+
+      
+
+<form id = "editForm"> 
+    <fieldset >
+        <label for="studentName">Name:</label>
+        <input type="text" name="editName" id="editName" required>
+        <br/>
+        <label for="editRollNo">Roll No:</label>
+        <input type="text" name="editRollNo" id="editRollNo" pattern="[0-9]{5}" required>
+        <br/>
+        <div class="group-btn">
+            <button type="button" value="Edit" id="editBtn" onclick="EditDetailsFunction()">Edit</button>
+            <button type="button" value="Edit" id="saveBtn" >Save</button>
+            <button type="button" value="Edit" id="cancelBtn" onclick="cancelFunction()" >Cancel</button>
+        </div>
+   
+    </fieldset>
+    
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pollution</title>
+    
+    <script src="../js/pollution.js"></script>
+    <link href="../css/pollution.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+<h1>Types Of Pollution</h1>
+<div>
+    <div id='message' onclick="console.log(this.innerHTML)">Hii click me and See the console</div>
+
+    <img class="imgAir" id="img1" src="../img/air.jpg" alt="Image:Air Pollution" onclick="displayId(this)"
+    onmouseover="showProperty(this)" onmouseleave="document.getElementById('message').innerHTML ='Hover on the image'" />
+    <br/>
+    <label id="label1">Air Pollution</label>
+</div>
+<div>
+    <img id="img2" src="../img/water.jpg" alt="Image:Water Pollution" onclick="console.log(this.alt)"
+    onmouseover="showProperty(this)" onmouseleave="document.getElementById('message').innerHTML ='Hover on the image'" />
+    <br/>
+    <label id="label2">Water Pollution</label>
+</div>
+<div>
+    <img id="img3" src="../img/noise.jpg" alt="Image:Noise Pollution" onclick="displayId(this)" 
+    onmouseover="showProperty(this)" onmouseleave="document.getElementById('message').innerHTML ='Hover on the image'" />
+    <br/>
+    <label id="label3">Noise Pollution</label>
+</div>
+
+</body>
+
+</html>

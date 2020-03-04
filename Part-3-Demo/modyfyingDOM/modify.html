@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <div id="insertHere"></div>
+    </body>
+    <script>
+        let div = document.createElement('div');
+        div.className = "alert";
+        div.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
+    
+        document.getElementById("insertHere").append(div);
+    </script>
+</html>
+
+<html>
+    <body>
+        <div id="insertHere">
+            <ul id="ulTag">
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Angular</li>
+            </ul>
+        </div>
+    </body>
+    <script>
+        let list = document.createElement('li');
+        list.innerHTML = "Prepended text!";
+        document.getElementById("ulTag").prepend(list);
+    </script>
+</html>

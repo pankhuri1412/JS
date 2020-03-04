@@ -1,0 +1,22 @@
+<form id="form" name="formControl">
+    <input type="text" name="login">
+    <select id="select">
+        <option value="react">React</option>
+        <option value="angular">Angular</option>
+        <option value="stencil">Stencil</option>
+        <option value="ember">Ember</option>
+        <option value="node">Node</option>
+    </select>
+</form>
+
+<script>
+    //input form controls
+    form.input.value = "New value";
+    form.textarea.value = "New text";
+    form.input.checked = true; // for a checkbox or radio button
+
+    // select and options form controls
+    select.options[2].selected = true;
+    select.selectedIndex = 2;
+    select.value = 'banana';
+</script>

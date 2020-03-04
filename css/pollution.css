@@ -1,0 +1,13 @@
+.imgAir{
+height: 12.5em;
+}
+
+div {
+padding: .5em;
+}
+
+label {
+color: darkslategray;
+font-size: 1.5em;
+padding: .5em .5em 0.5em 3em;
+}
